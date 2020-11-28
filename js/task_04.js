@@ -2,7 +2,7 @@
 let credits = 23580;
 const pricePerDroid = 3000;
 
-let inputDroidQty = prompt("Введите количество дроидов:");
+const inputDroidQty = prompt("Введите количество дроидов:");
 
 if (inputDroidQty === null) {
   console.log("Отменено пользователем!");
@@ -11,6 +11,7 @@ if (inputDroidQty === null) {
   console.log(totalPrice);
 
   if (credits < totalPrice) {
+      console.log("Недостаточно средств на счету!");
     alert("Недостаточно средств на счету!");
   } else {
     credits = credits - totalPrice;

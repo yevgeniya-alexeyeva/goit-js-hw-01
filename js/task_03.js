@@ -1,6 +1,6 @@
 "use strict";
 const ADMIN_PASSWORD = "jqueryismyjam";
-let inputPass = prompt("Введите пароль");
+const inputPass = prompt("Введите пароль");
 let message;
 if (inputPass === null) {
   message = "Отменено пользователем";
